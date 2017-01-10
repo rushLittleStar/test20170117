@@ -1,0 +1,43 @@
+//@import "index";
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: gray;
+}
+%position{position: absolute; top:0; left: 0; width: 100%;}
+@mixin getCommonMix($h,$w){
+  width: $w;
+  height: $h;
+}
+@mixin cmMix() {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: transparent;
+}
+@mixin font() {
+  font-size: countSize(2)+rem;
+  font-family: "microsoft yahei";
+}
+@mixin flex(){
+  display: flex;
+  justify-content: center;
+}
+@function countSize($w){
+  @return $w/31.25;
+}
+@mixin style(){
+  @include position;
+  top:0;
+  width:100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+
+}
+$prefix: -ms -o -webkit -moz; //List����
+@mixin getCss3($key,$val){
+  @each $v in $prefix {
+    #{$v}-#{$key}:$val
+  }
+}

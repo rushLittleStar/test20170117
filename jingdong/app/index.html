@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--界面初入-->
+		<div class="swiper-container banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img style="color: #000;" src="images/bg_start.jpg" /></div>
+				<div class="swiper-slide"><img src="images/bg_intro_1.jpg" /></div>
+				<div class="swiper-slide"><img src="images/bg_intro_2.jpg" /></div>
+				<div class="swiper-slide click"><img src="images/bg_intro_3.jpg" />
+					<p>立即体验</p>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!--首页-->
+		<!--header-->
+		<header>
+			<div><span class="iconfont left-pull">&#xe726;</span></div>
+			<div class="addBudget"><a href="template/addBudget.html">添加预算</a></div>
+			<div><img src="images/ic_ri_qi.png" /><span class="date"></span></div>
+		</header>
+		<!--main-->
+		<section class="main">
+			<div class="comein">
+				<p><span class="month">2</span>月收入</p>
+				<p class="money-in">0.00</p>
+			</div>
+			<article>
+				<p class="line"></p>
+				<img src="images/bud.png" class="bud"/>
+				<p class="lineTo"></p>
+				<div id="wrapper">
+					<img id="scroller" class="pull" src="images/skin_home_none.9.png" />
+				</div>
+				<div class="addlist">
+					<div class="oprate">
+							<img class="cancel" src="images/取消.png" />
+							<a href="template/inAndOutDetail.html"><img class="remarks" src="images/备注.png" /></a>
+						</div>
+						
+					<ul class="meau-list">
+						<!--<li>
+							<p class="continue"></p>
+							<div>
+								<span class="iconfont">&#xe605;</span>
+								<p><span class="meau-name">餐饮</span><span class="meau-howmuch">8.00</span></p>
+							</div>				
+						</li>-->
+					
+				</ul>
+				</div>
+				
+			</article>
+			<div class="comeout">
+				<p><span class="month">2</span>月支出</p>
+				<p class="money-out">0.00</p>
+			</div>
+		</section>
+		<!--footer-->
+		<footer>
+			<a href="index.html">
+				<span><img src="images/笔组合1.png"/></span>
+				<span>记账</span>
+			</a>
+			<a href="template/stateForms.html">
+				<span><img src="images/投放报表.png"/></span>
+				<span>报表</span>
+			</a>
+			<a href="template/myWallet.html">
+				<span><img src="images/资金.png"/></span>
+				<span>资金</span>
+			</a>
+			<a href="template/morePage.html">
+				<span><img src="images/更多3.png"/></span>
+				<span>更多</span>
+			</a>
+		</footer>
+		<!--侧拉框-->
+		<section class="pull-content">
+			<p class="title">账本<span class="set">管理</span></p>
+			<div class="addup">
+				<p><span>累计收入</span><span class="income">0.00</span></p>
+				<p><span>累计支出</span><span class="exband">1500.00</span></p>
+				<img class="pic" src="images/skin_ic_all_books.png" />
+			</div>
+			<div class="books">
+				<ul class="books-list">
+					<li>
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">日常账本</span>
+						<span class="back"></span>
+						<p class="nochoice">
+							<img src="images/ic_book_edit_nol.png"/>
+						</p>
+					</li>
+					<li>
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">生意账本</span>
+						<span class="back"></span>
+						<p class="nochoice">
+							<img src="images/ic_book_edit_nol.png"/>
+						</p>
+					</li>
+					<li>
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">结婚账本</span>
+						<span class="back"></span>
+						<p class="nochoice">
+							<img src="images/ic_book_edit_nol.png"/>
+						</p>
+					</li>
+					<li>
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">装修账本</span>
+						<span class="back"></span>
+						<p class="nochoice">
+							<img src="images/ic_book_edit_nol.png"/>
+						</p>
+					</li>
+					<li>
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">旅行账本</span>
+						<span class="back"></span>
+						<p class="nochoice">
+							<img src="images/ic_book_edit_nol.png"/>
+						</p>
+					</li>
+					<div class="add">
+						<p class="iconfont sum">&#xe633;</p>
+						<span class="type">添加账本</span>
+						<span class="back"></span>
+					</div>
+				</ul>
+
+			</div>
+			<div class="pull-footer">
+				<p class="edit">编辑（单选）</p>
+				<p class="delete">删除</p>
+			</div>
+		</section>
+		<!--pop-->
+		<div class="pop"></div>
+		<script src="js/lib/jquery-1.7.2.min.js"></script>
+		<script src="js/lib/swiper.min.js"></script>
+		<script type="text/javascript" src="js/lib/iscroll-probe.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
